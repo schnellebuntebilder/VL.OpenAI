@@ -129,7 +129,7 @@
     ************************ CompletionResult ************************
 
 -->
-      <Node Name="CompletionResult" Bounds="433,327" Id="IuN0w0kIid4Py3tphIPr38">
+      <Node Name="CompletionResult" Bounds="433,410" Id="IuN0w0kIid4Py3tphIPr38">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -147,7 +147,7 @@
     ************************ Choice ************************
 
 -->
-      <Node Name="Choice" Bounds="433,280" Id="J4a3QtdXPprOjc51XXqubc">
+      <Node Name="Choice" Bounds="433,366" Id="J4a3QtdXPprOjc51XXqubc">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -165,7 +165,7 @@
     ************************ Engine ************************
 
 -->
-      <Node Name="Engine" Bounds="433,238" Id="FBV6eQP6XuiNtaxZuDBKKE">
+      <Node Name="Engine" Bounds="433,322" Id="FBV6eQP6XuiNtaxZuDBKKE">
         <p:NodeReference>
           <Choice Kind="ForwardDefinition" Name="Forward" />
           <FullNameCategoryReference ID="Primitive" />
@@ -178,7 +178,7 @@
           <ProcessDefinition Id="T3sCOnbvLylPJHRaEASAAw" IsHidden="true" />
         </Patch>
       </Node>
-      <Canvas Id="Knws78sM3HaNLT6p0iHItL" Name="API" Position="434,39">
+      <Canvas Id="Knws78sM3HaNLT6p0iHItL" Name="API" Position="433,39">
         <!--
 
     ************************ Davinci ************************
@@ -789,7 +789,7 @@
     ************************ Search ************************
 
 -->
-      <Node Name="Search" Bounds="451,165" Id="Cwk6GToG9cfPmrOiUYbdJ8">
+      <Node Name="Search" Bounds="433,195" Id="Cwk6GToG9cfPmrOiUYbdJ8">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -977,7 +977,7 @@
     ************************ SearchResult ************************
 
 -->
-      <Node Name="SearchResult" Bounds="200,100" Id="LtOIJgpcxjTONPUqnleVqv">
+      <Node Name="SearchResult" Bounds="730,168" Id="LtOIJgpcxjTONPUqnleVqv">
         <p:NodeReference>
           <Choice Kind="RecordDefinition" Name="Record" />
           <FullNameCategoryReference ID="Primitive" />
@@ -1052,7 +1052,7 @@
     ************************ StreamCompletion ************************
 
 -->
-      <Node Name="StreamCompletion" Bounds="687,121" Id="SxwtEsvdHEvOZUqKbxpKzi">
+      <Node Name="StreamCompletion" Bounds="433,158" Id="SxwtEsvdHEvOZUqKbxpKzi">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -1187,7 +1187,7 @@
     ************************ CompletionRequest ************************
 
 -->
-      <Node Name="CompletionRequest" Bounds="524,446" Id="I8Qs3EePxYIME3eIzAw8NG">
+      <Node Name="CompletionRequest" Bounds="730,209" Id="I8Qs3EePxYIME3eIzAw8NG">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -1413,6 +1413,24 @@
           <Link Id="ARDjqrb3zURNl6mqW7LMg8" Ids="BACVvAN5CgyL8kuCk2nHc9,G8OvV1cirkWNMJASSn6uuS" />
         </Patch>
       </Node>
+      <Pad Id="BNbrG8eHzeUMOrXkQsrfiM" Bounds="416,-61,364,19" ShowValueBox="true" isIOBox="true" Value="based on ">
+        <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">9</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
+      <Pad Id="ENvsENeoJyFPZLKXUYE4pN" Bounds="417,-31,329,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/OkGoDoIt/OpenAI-API-dotnet">
+        <p:TypeAnnotation>
+          <Choice Kind="TypeFlag" Name="String" />
+        </p:TypeAnnotation>
+        <p:ValueBoxSettings>
+          <p:fontsize p:Type="Int32">9</p:fontsize>
+          <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+        </p:ValueBoxSettings>
+      </Pad>
     </Canvas>
     <!--
 
