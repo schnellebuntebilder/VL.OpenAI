@@ -134,7 +134,8 @@
             <Pin Id="NEtiaWaZmtvNJoYFs8dPQj" Name="Request" Kind="InputPin" />
             <Pin Id="JLDX9GDZWfMPX16ARiOudz" Name="Result Handler" Kind="InputPin" />
             <Pin Id="LQkwZ8Fs5G7PlakkDNREqy" Name="is running" Kind="OutputPin" />
-            <Pin Id="Au4IX0gyc6ULf79FVnSYpq" Name="Finished" Kind="OutputPin" />
+            <Pin Id="VHxbKdYJX3JLMfKrQHk2Z1" Name="Error" Kind="OutputPin" />
+            <Pin Id="E5gXHFY1GC5QO9D2D3WALt" Name="Error Message" Kind="OutputPin" />
           </Node>
           <Node Bounds="737,690,154,221" Id="Thp0Y1Byb5tN0IJtnMe0Z7">
             <p:NodeReference>
@@ -203,7 +204,7 @@
             <Pin Id="FNtFN3KFDkpNUY7ag4sCJx" Name="Output" Kind="StateOutputPin" />
             <Pin Id="FD4wAF0ESfBNt04TXygHwo" Name="Result" Kind="OutputPin" />
           </Node>
-          <Pad Id="O6NWuANivuiNN8BjBtqI2a" Comment="is running" Bounds="197,1001,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="O6NWuANivuiNN8BjBtqI2a" Comment="is running" Bounds="197,986,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="1009,783,144,164" Id="Lti5UkGvEBTPCcjsUbcS3A">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -305,14 +306,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Ejo6kdsnGV1P9DWUStnOvz" Comment="Finished" Bounds="739,1014,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
+          <Pad Id="G0VJoQdrZQROBqs1AXQzXx" Comment="Error" Bounds="468,986,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PhoSogXlD5pQPt0egFtiIi" Comment="Error Message" Bounds="559,986,175,118" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="NbK2u7eqVqYL2JoGkXmBiG" Name="Create" />
         <Patch Id="RR6eUqPrhBtOGsMlKYX5tg" Name="Update" />
@@ -364,11 +359,12 @@
         <Link Id="Tr2iMl0IwRKMIfun5UM6jb" Ids="Nankyy15j9nP6H4yq21B2R,UTECjzEgvxUN2FQdxJ3gQm" />
         <Link Id="ICzQaYBZHvGMantE1MvK5M" Ids="Awah71h0W9hO57CvMQsoZC,SKbtDdcUkIBOLnh0rpI1As" />
         <Link Id="VohWZwvauAzODXnFBV3Bhl" Ids="M1PP5yezcUxM1rHs4fA0Go,C2O3jmhyiwaQVaLIgo2nd2" />
-        <Link Id="JVV7Izuqj1zN4xLG62TZQB" Ids="Au4IX0gyc6ULf79FVnSYpq,Ejo6kdsnGV1P9DWUStnOvz" />
         <Link Id="VK1Ptc2RJ55MLttewHNUv8" Ids="ATV2psxMdq5LAXLgHahbTe,NEtiaWaZmtvNJoYFs8dPQj" />
         <Link Id="SqYEB2Y63uVL9NWj6YoPbP" Ids="EDdn2kw5eVCMhYy6QoFAH5,G27Dml6fBFKOoQdwFAiBcH" />
         <Link Id="RgE44SpUZZsO98nL4fdos5" Ids="A4Ca7GPFbZKOdWuEMeNb8O,Pdw1CYZn2U9Lk6lzSlZl94" />
         <Link Id="OPoMMY0NtXuOPTGgeYhOlK" Ids="A4Ca7GPFbZKOdWuEMeNb8O,DLXTmT129psLhzMexnLxJx" />
+        <Link Id="TjfLT5aMmFSQCrl7PdiF4E" Ids="VHxbKdYJX3JLMfKrQHk2Z1,G0VJoQdrZQROBqs1AXQzXx" />
+        <Link Id="FAwFH5MjnLyNX7m4Ht0ifM" Ids="E5gXHFY1GC5QO9D2D3WALt,PhoSogXlD5pQPt0egFtiIi" />
       </Patch>
     </Node>
   </Patch>

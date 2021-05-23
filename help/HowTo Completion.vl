@@ -123,7 +123,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="451,789,367,19" Id="A8kPys9YE8gOl7RraJqx93">
+          <Node Bounds="451,728,367,19" Id="A8kPys9YE8gOl7RraJqx93">
             <p:NodeReference LastCategoryFullName="OpenAI" LastSymbolSource="VL.OpenAI.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Completion" />
@@ -133,8 +133,11 @@
             <Pin Id="C2O3jmhyiwaQVaLIgo2nd2" Name="GO" Kind="InputPin" />
             <Pin Id="NEtiaWaZmtvNJoYFs8dPQj" Name="Request" Kind="InputPin" />
             <Pin Id="LumXV0hZUenMYXp6go2dSG" Name="Output" Kind="OutputPin" />
+            <Pin Id="Vl05WS3HSUrPAz84SLWUpY" Name="is running" Kind="OutputPin" />
+            <Pin Id="Ju3WjIqKc9JPCBeNIbu5BI" Name="Error" Kind="OutputPin" />
+            <Pin Id="LYrw6YDITzwOi3W3OapleF" Name="Error Message" Kind="OutputPin" />
           </Node>
-          <Pad Id="M1PP5yezcUxM1rHs4fA0Go" Comment="GO" Bounds="634,737,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="M1PP5yezcUxM1rHs4fA0Go" Comment="GO" Bounds="634,676,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -402,6 +405,9 @@
             </p:Value>
           </Pad>
           <Pad Id="E1fUaGaF9ZPPjXSGaQKiEp" Comment="Processing Time" Bounds="453,1332,133,58" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HInrG4T5BkrPJeoel1ha1f" Comment="Error Message" Bounds="815,779,610,58" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="JuftJZgGK0aPbNXcluDjUl" Comment="Error" Bounds="694,770,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KJKbO0QMsrRPklxTvAy7UM" Comment="is running" Bounds="574,772,35,35" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="NbK2u7eqVqYL2JoGkXmBiG" Name="Create" />
         <Patch Id="RR6eUqPrhBtOGsMlKYX5tg" Name="Update" />
@@ -461,7 +467,10 @@
         <Link Id="NEGFLctKOoeMF9tjPGXsYs" Ids="QL98njDi6UEQHCsVyBrNpJ,DMs2HQWuWZ0Lk94IHXunAe" />
         <Link Id="UWxeUt4lmQSNBngRLwPneO" Ids="KyhgKLH1LVbOCLMiqm71Sy,QAPQF1e9ucsMEuSVh0zsmL" />
         <Link Id="Q10U0DmqMWRLvMl53eQ1o9" Ids="DzgOWTf4VbaQDjZRvB7kdZ,E1fUaGaF9ZPPjXSGaQKiEp" />
-        <Link Id="QoSvLhpRD6EQF5Pm8dAUoN" Ids="LumXV0hZUenMYXp6go2dSG,FFz5fFlpAGyLSX1qVmccl3" />
+        <Link Id="C45Wdfyi2g8Ot6AdHhvDah" Ids="LumXV0hZUenMYXp6go2dSG,FFz5fFlpAGyLSX1qVmccl3" />
+        <Link Id="M884sX7EzLmMXX2PuL0a3E" Ids="LYrw6YDITzwOi3W3OapleF,HInrG4T5BkrPJeoel1ha1f" />
+        <Link Id="OmiciRK5FIKMpPPFjlZNqw" Ids="Ju3WjIqKc9JPCBeNIbu5BI,JuftJZgGK0aPbNXcluDjUl" />
+        <Link Id="NsQ6nBsO1GNNcadvMeUqbJ" Ids="Vl05WS3HSUrPAz84SLWUpY,KJKbO0QMsrRPklxTvAy7UM" />
       </Patch>
     </Node>
   </Patch>
