@@ -13,7 +13,7 @@
     <copyright>Copyright © 2021. All rights reserved.</copyright>
     <tags>VVVV, VL, OpenAI</tags>
     <dependencies>
-        <dependency id="openai" version="1.2.0]" />
+        <dependency id="openai" version="[1.2.0]" />
     </dependencies>
 	<license type="expression">LGPL-3.0-only</license>
     <icon>icon\nugeticon.png</icon>
