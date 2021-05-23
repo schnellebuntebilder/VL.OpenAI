@@ -63,7 +63,7 @@
     ************************ Davinci ************************
 
 -->
-        <Node Name="Davinci" Bounds="420,231" Id="M4PGUQeCpcNNNAdxoVk8Wa">
+        <Node Name="Davinci" Bounds="420,231" Id="M4PGUQeCpcNNNAdxoVk8Wa" Summary="Davinci is the most capable engine and can perform any task the other models can perform and often with less instruction. For applications requiring a lot of understanding of the content, like summarization for a specific audience and creative content generation, Davinci is going to produce the best results. These increased capabilities require more compute resources, so Davinci costs more per API call and is not as fast as the other engines. Another area where Davinci shines is in understanding the intent of text. Davinci is quite good at solving many kinds of logic problems and explaining the motives of characters. Davinci has been able to solve some of the most challenging AI problems involving cause and effect." Remarks="Good at: Complex intent, cause and effect, summarization for audience">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -185,7 +185,7 @@
     ************************ Ada ************************
 
 -->
-        <Node Name="Ada" Bounds="420,285" Id="KFkDeuPrIBUNSRSmdtNJ8f">
+        <Node Name="Ada" Bounds="420,285" Id="KFkDeuPrIBUNSRSmdtNJ8f" Summary="Ada is usually the fastest model and can perform tasks like parsing text, address correction and certain kinds of classification tasks that don’t require too much nuance. Ada’s performance can often be improved by providing more context." Remarks="Good at: Parsing text, simple classification, address correction, keywords">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -313,7 +313,7 @@
     ************************ Babbage ************************
 
 -->
-        <Node Name="Babbage" Bounds="420,339" Id="K3jHmGU4hc5PD3kHUb0LYs">
+        <Node Name="Babbage" Bounds="420,339" Id="K3jHmGU4hc5PD3kHUb0LYs" Summary="Babbage can perform straightforward tasks like simple classification. It’s also quite capable when it comes to Semantic Search ranking how well documents match up with search queries." Remarks="Good at: Moderate classification, semantic search classification">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -441,7 +441,7 @@
     ************************ Curie ************************
 
 -->
-        <Node Name="Curie" Bounds="420,393" Id="MF6xwXT0yJfQBC4R6z3b6n">
+        <Node Name="Curie" Bounds="420,393" Id="MF6xwXT0yJfQBC4R6z3b6n" Summary="Curie is extremely powerful, yet very fast. While Davinci is stronger when it comes to analyzing complicated text, Curie is quite capable for many nuanced tasks like sentiment classification and summarization. Curie is also quite good at answering questions and performing Q&amp;A and as a general service chatbot." Remarks="Good at: Language translation, complex classification, text sentiment, summarization">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
