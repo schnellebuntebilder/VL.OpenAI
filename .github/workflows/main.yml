@@ -1,0 +1,35 @@
+name: push_nuget
+
+# on push on master
+on:
+  workflow_dispatch:
+    inputs:
+      buildnumber:
+        description: 'Build Number'     
+        required: true
+        default: '1'
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Git Checkout
+      uses: actions/checkout@master
+
+    - name: Download Icon
+      uses: carlosperate/download-file-action@v1.0.3
+      with:
+        file-url: 'https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png'
+        location: './deployment'
+
+    - name: Setup Nuget.exe
+      uses: nuget/setup-nuget@v1
+
+    - name: Nuget Pack
+      run: nuget pack ./deployment/VL.OpenAi.nuspec -Version ${{env.VERSION}}
+      env:
+        VERSION: 0.0.${{ github.event.inputs.buildnumber }}
+      
+    - name: Nuget Push
+      run: nuget push *.nupkg ${{secrets.NUGET_KEY}} -src https://api.nuget.org/v3/index.json -NoSymbols

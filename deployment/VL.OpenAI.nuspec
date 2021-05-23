@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.OpenAI</id>
+    <version>0.0.1</version>
+    <title>VL.OpenAI</title>
+    <authors>sebl</authors>
+    <owners>sebl</owners>
+    <projectUrl>https://github.com/schnellebuntebilder/VL.OpenAI</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Set of nodes to provide access to the OpenAI API</summary>
+    <description>talk to the OpenAI API</description>
+    <copyright>Copyright © 2021. All rights reserved.</copyright>
+    <tags>VVVV, VL, OpenAI</tags>
+    <dependencies>
+        <dependency id="openai" version="1.2.0]" />
+    </dependencies>
+	<license type="expression">LGPL-3.0-only</license>
+    <icon>icon\nugeticon.png</icon>
+  </metadata>
+  <files>
+    <file src="..\VL.OpenAI.vl" target="" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+	<file src="nugeticon.png" target="icon\" />
+  </files>
+</package>
