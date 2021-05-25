@@ -839,7 +839,8 @@
             <Pin Id="EPhkHrORMN1LMXI5jMA6LU" Name="Request" Kind="InputPin" />
             <Pin Id="KYrz8EI9VmkQYtXOPuJtFN" Name="Result Handler" Kind="InputPin" />
             <Pin Id="EuzHFbNaVjcNrse2f9QQ3q" Name="is running" Kind="OutputPin" />
-            <Pin Id="GHEmDf1MdpdLz9UnQCLWqu" Name="Finished" Kind="OutputPin" />
+            <Pin Id="EqPsVV7xtkSOKVIkNQ7NpE" Name="Error" Kind="OutputPin" />
+            <Pin Id="C3mXNFB3KnyMmDNBr8YOkP" Name="Error Message" Kind="OutputPin" />
           </Node>
           <Node Bounds="647,766,154,191" Id="HRxJV4GbmSGOmVxZSo6cwT">
             <p:NodeReference>
@@ -992,15 +993,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KFHac1eUJ7zMTXB0mIOlQP" Comment="Finished" Bounds="649,1060,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="P4P3v3flFthMTiO6I22Q5e" SlotId="Lm6dNs4Ev9pNtPfvqtWh7n" Bounds="563,1071" />
+          <Pad Id="P4P3v3flFthMTiO6I22Q5e" SlotId="Lm6dNs4Ev9pNtPfvqtWh7n" Bounds="213,1067" />
           <Node Bounds="801,1098,36,19" Id="S2HS0OK73N4PbS3PE69wt7">
             <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -1063,6 +1056,15 @@
           <Pad Id="KaQZx3kwPm4N2Fir5ll9A2" SlotId="JYcYf8I8X52Lna5hc2fDal" Bounds="318,405" />
           <Pad Id="PpWVoaeljoNQQp75vnEpMa" SlotId="AXfk4JQH1kOLeK8e4TRmnV" Bounds="834,1025" />
           <Pad Id="R8fpc8xcRYFMYHxzGASxxW" SlotId="AXfk4JQH1kOLeK8e4TRmnV" Bounds="279,447" />
+          <Node Bounds="160,1023,56,19" Id="KUKeTaywDx8Nse1Wmxlnbb">
+            <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TogEdge" />
+            </p:NodeReference>
+            <Pin Id="V2TRtdPttDvP7nJXVAhtcg" Name="Value" Kind="InputPin" />
+            <Pin Id="JGZKZn1rNTkQLpUfhgu6yc" Name="Up Edge" Kind="OutputPin" />
+            <Pin Id="N57Ip2fr8mFOIeAsTIrwlN" Name="Down Edge" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="SkLkkslC3PML4LEg7kDjFz" Name="Create" />
         <Patch Id="CZJT0UzId5cO1ZEKco7kqq" Name="Update" />
@@ -1109,13 +1111,10 @@
         <Link Id="MZIgPQQwuR3PJyFBoFY42j" Ids="UH8XTHzcY2cNp9hcOq8Gqa,UpbBc7sjcIbMC5dUJBky9P" />
         <Link Id="G4gp6otX7JTLaVuPzBTukG" Ids="UpbBc7sjcIbMC5dUJBky9P,TkBjpGFK3SJQIHxh0dXTjs" />
         <Link Id="QO42jw289tmNorKfatWMQ1" Ids="BBlEVMtDHbjPNAM7puipL9,PKgPmsBP6Z6Qa2T93Pf1xT" />
-        <Link Id="MxWJYKNiARnN2et1X1XatO" Ids="GHEmDf1MdpdLz9UnQCLWqu,KFHac1eUJ7zMTXB0mIOlQP" />
         <Link Id="EOCqkafmNXIQFoefuf7KM9" Ids="IXCgwOJgUp3MrdUwGfNCO1,EPhkHrORMN1LMXI5jMA6LU" />
         <Link Id="OXmzfR3uSw7MB8f9FtIt7u" Ids="UD1MNFcEdrrOuik3S2RUXo,EGTLkmidMEjO2aMpM99P5H" />
         <Link Id="UTawRsZGrvhQOaalxgvBqM" Ids="GgouqZBUBvPPSsf8uHNuPH,KdMuB4gMd9pL86PS8Qr6Eu" />
         <Slot Id="Lm6dNs4Ev9pNtPfvqtWh7n" Name="result finished" />
-        <Link Id="JBxLm8mcdT8Qa9Sr0ogewy" Ids="GHEmDf1MdpdLz9UnQCLWqu,P4P3v3flFthMTiO6I22Q5e" />
-        <Link Id="RGPXHAm34fFMgGZqvCD7vy" Ids="GHEmDf1MdpdLz9UnQCLWqu,EDFh2liuP99P0Ww6fD3vyT" />
         <Link Id="AlamVo2DY7QPpWvtB00mxc" Ids="BBlEVMtDHbjPNAM7puipL9,RS5REsAv2URMAs8k3tuRnr" />
         <Slot Id="MAeSo8nkXtyMxc2gwFf4lx" Name="last sample" />
         <Link Id="OSwOsQKCp6CNsvmbu00tZp" Ids="JoDLFJT4sSvOwyUnbP4OHP,LcIisrrdIsYLky60szfUBi" />
@@ -1135,6 +1134,9 @@
         <Slot Id="AXfk4JQH1kOLeK8e4TRmnV" Name="completion" />
         <Link Id="PwoCnvkm2rVNlSMXPrnUSC" Ids="BBlEVMtDHbjPNAM7puipL9,PpWVoaeljoNQQp75vnEpMa" />
         <Link Id="B3wImKzVD3lLNd1gcA25W5" Ids="R8fpc8xcRYFMYHxzGASxxW,GRCvBvL6bRBOIwrKeF7ALQ" />
+        <Link Id="JfpG1TFFH2POcGlipoSPFo" Ids="EuzHFbNaVjcNrse2f9QQ3q,V2TRtdPttDvP7nJXVAhtcg" />
+        <Link Id="SuLi9HKM3cLLiKvO1TUm27" Ids="N57Ip2fr8mFOIeAsTIrwlN,P4P3v3flFthMTiO6I22Q5e" />
+        <Link Id="CUovPCX8XWLP1oxY6UuYeX" Ids="N57Ip2fr8mFOIeAsTIrwlN,EDFh2liuP99P0Ww6fD3vyT" />
       </Patch>
     </Node>
   </Patch>
